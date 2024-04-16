@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8bb1ebc2-1fb4-4eb4-8b4b-d63a35923c2e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eureka_Server_18000/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eureka_Server_18000/src/main/java/ynu/edu/EurekaApplication18000.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eureka_Server_18000/src/main/resources/application.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eureka_Server_18001/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eureka_Server_18001/src/main/java/ynu/edu/EurekaApplication18001.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eureka_Server_18001/src/main/resources/application.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Service_Customer_16000/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Service_Customer_16000/src/main/java/ynu/edu/ConsumerApplication16000.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Service_Customer_16000/src/main/java/ynu/edu/Controller/CartController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Service_Customer_16000/src/main/java/ynu/edu/Entity/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Service_Customer_16000/src/main/java/ynu/edu/IService/ICartService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Service_Customer_16000/src/main/resources/application.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Service_Customer_16001/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Service_Customer_16001/src/main/java/ynu/edu/Ruler/CustomLoadBalancerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Service_Customer_16001/src/main/java/ynu/edu/Ruler/CustomWeightedLoadBalancer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Service_Customer_16001/src/main/java/ynu/edu/Ruler/CustomerThreeTimeLoadBalanceConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Service_Customer_16001/src/main/resources/application.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Service_Provider_11000/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Service_Provider_11000/src/main/java/ynu/edu/Controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Service_Provider_11000/src/main/java/ynu/edu/Entity/CommonResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Service_Provider_11000/src/main/java/ynu/edu/ProviderApplication11000.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Service_Provider_11000/src/main/resources/application.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Service_Provider_11000/src/test/java/test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Service_Provider_11001/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Service_Provider_11001/src/main/java/ynu/edu/Controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Service_Provider_11001/src/main/java/ynu/edu/Entity/CommonResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Service_Provider_11001/src/main/java/ynu/edu/Entity/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Service_Provider_11001/src/main/java/ynu/edu/ProviderApplication11001.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Service_Provider_11001/src/main/resources/application.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Interface" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2ctePNNc9mgRnyW5SCiIw883rsg" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "jdk.selected.JAVA_MODULE": "20",
+    "last_opened_file_path": "D:/2023Exercise/SpringCloud/ex/ex1",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "spring.configuration.checksum": "591caa9c5f2697cbfd3d2be2c84e1b1f"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\2023Exercise\SpringCloud\ex\ex1\Service_Customer_16001\src\main\java\ynu\edu" />
+      <recent name="D:\2023Exercise\SpringCloud\ex\ex1\Service_Provider_11001\src\main\resources" />
+      <recent name="D:\2023Exercise\SpringCloud\ex\ex1\Service_Provider_11001\src\main\java" />
+      <recent name="D:\2023Exercise\SpringCloud\ex\ex1\Service_Customer_16001\src\main\resources" />
+      <recent name="D:\2023Exercise\SpringCloud\ex\ex1" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+        <option value="docker-deploy" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.ConsumerApplication16000">
+    <configuration name="ConsumerApplication16000" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="Service_Customer_16000" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="ynu.edu.ConsumerApplication16000" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ynu.edu.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EurekaApplication18000" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="Eureka_Server_18000" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="ynu.edu.EurekaApplication18000" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ynu.edu.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EurekaApplication18001" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="Eureka_Server_18001" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="ynu.edu.EurekaApplication18001" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ynu.edu.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProviderApplication11000" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="Service_Provider_11000" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="ynu.edu.ProviderApplication11000" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ynu.edu.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProviderApplication11001 " type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true">
+      <option name="ACTIVE_PROFILES" />
+      <module name="Service_Provider_11001" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="ynu.edu.ProviderApplication11001" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ynu.edu.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.ConsumerApplication16000" />
+        <item itemvalue="Spring Boot.ProviderApplication11000" />
+        <item itemvalue="Spring Boot.ProviderApplication11001 " />
+        <item itemvalue="Spring Boot.EurekaApplication18001" />
+        <item itemvalue="Spring Boot.EurekaApplication18000" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8bb1ebc2-1fb4-4eb4-8b4b-d63a35923c2e" name="Changes" comment="" />
+      <created>1708935283046</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1708935283046</updated>
+      <workItem from="1708935284495" duration="985000" />
+      <workItem from="1709519559055" duration="5843000" />
+      <workItem from="1709726039786" duration="1229000" />
+      <workItem from="1710124253305" duration="3775000" />
+      <workItem from="1710128312284" duration="2064000" />
+      <workItem from="1710161365892" duration="120000" />
+      <workItem from="1710162447501" duration="766000" />
+      <workItem from="1710165521241" duration="599000" />
+      <workItem from="1710212622807" duration="832000" />
+      <workItem from="1710417250951" duration="473000" />
+      <workItem from="1710419381906" duration="443000" />
+      <workItem from="1710728448452" duration="4493000" />
+      <workItem from="1710733015815" duration="2048000" />
+      <workItem from="1710751047114" duration="6000" />
+      <workItem from="1711332983305" duration="1872000" />
+      <workItem from="1711346856043" duration="357000" />
+      <workItem from="1711348452042" duration="1248000" />
+      <workItem from="1711349709116" duration="2666000" />
+      <workItem from="1711598818377" duration="48000" />
+      <workItem from="1711950836714" duration="796000" />
+      <workItem from="1711957810154" duration="3085000" />
+      <workItem from="1712543489494" duration="94000" />
+      <workItem from="1713164082536" duration="2721000" />
+      <workItem from="1713168527439" duration="2228000" />
+      <workItem from="1713179179710" duration="2578000" />
+      <workItem from="1713250934099" duration="4249000" />
+      <workItem from="1713255939583" duration="751000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

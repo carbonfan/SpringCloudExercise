@@ -1,0 +1,14 @@
+server:
+  port: 16001
+spring:
+  application:
+    name: "consumer-server"
+eureka:
+  instance:
+    prefer-ip-address: true #不加则服务器上原本是ip地址的地方会变成机器地址
+    instance-id: ${spring.cloud.client.ip-address}:${server.port} #该服务的ip地址 告知服务器
+    lease-renewal-interval-in-seconds: 5 #5s通信一次
+    lease-expiration-duration-in-seconds: 15 #15s之内没有通信则删除该服务
+  client: #微服务注册中心地址
+    service-url:
+      defaultZone: "http://eurekaServer18000:18000/eureka/,http://eurekaServer18001:18001/eureka/"
