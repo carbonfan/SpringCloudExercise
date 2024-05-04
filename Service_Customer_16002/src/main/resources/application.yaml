@@ -1,5 +1,5 @@
 server:
-  port: 16001
+  port: 16002
 spring:
   application:
     name: "consumer-server"
@@ -13,15 +13,12 @@ eureka:
     service-url:
       defaultZone: "http://eurekaServer18000:18000/eureka/,http://eurekaServer18001:18001/eureka/"
 resilience4j:
-  thread-pool-bulkhead:
+  ratelimiter:
     configs:
       default:
-        max-thread-pool-size: 10
-        keep-alive-duration: 20ms
-        core-thread-pool-size: 5
-        queue-capacity: 10
+        limit-refresh-period: 2s
+        limit-for-period: 5
+        timeout-duration: 1s
     instances:
-      bulkheadA:
+      ratelimiterA:
         base-config: default
-
-

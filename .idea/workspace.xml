@@ -5,43 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8bb1ebc2-1fb4-4eb4-8b4b-d63a35923c2e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Eureka_Server_18000/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Eureka_Server_18000/src/main/java/ynu/edu/EurekaApplication18000.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Eureka_Server_18000/src/main/resources/application.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Eureka_Server_18001/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Eureka_Server_18001/src/main/java/ynu/edu/EurekaApplication18001.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Eureka_Server_18001/src/main/resources/application.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Service_Customer_16000/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Service_Customer_16000/src/main/java/ynu/edu/ConsumerApplication16000.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Service_Customer_16000/src/main/java/ynu/edu/Controller/CartController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Service_Customer_16000/src/main/java/ynu/edu/Entity/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Service_Customer_16000/src/main/java/ynu/edu/IService/ICartService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Service_Customer_16000/src/main/resources/application.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Service_Customer_16001/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Service_Customer_16001/src/main/java/ynu/edu/Ruler/CustomLoadBalancerConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Service_Customer_16001/src/main/java/ynu/edu/Ruler/CustomWeightedLoadBalancer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Service_Customer_16001/src/main/java/ynu/edu/Ruler/CustomerThreeTimeLoadBalanceConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Service_Customer_16001/src/main/resources/application.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Service_Provider_11000/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Service_Provider_11000/src/main/java/ynu/edu/Controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Service_Provider_11000/src/main/java/ynu/edu/Entity/CommonResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Service_Provider_11000/src/main/java/ynu/edu/ProviderApplication11000.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Service_Provider_11000/src/main/resources/application.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Service_Provider_11000/src/test/java/test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Service_Provider_11001/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Service_Provider_11001/src/main/java/ynu/edu/Controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Service_Provider_11001/src/main/java/ynu/edu/Entity/CommonResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Service_Provider_11001/src/main/java/ynu/edu/Entity/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Service_Provider_11001/src/main/java/ynu/edu/ProviderApplication11001.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Service_Provider_11001/src/main/resources/application.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Service_Customer_16002/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Service_Customer_16002/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service_Customer_16000/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Service_Customer_16000/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service_Customer_16000/src/main/java/ynu/edu/ConsumerApplication16000.java" beforeDir="false" afterPath="$PROJECT_DIR$/Service_Customer_16000/src/main/java/ynu/edu/ConsumerApplication16000.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service_Customer_16000/src/main/java/ynu/edu/Controller/CartController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Service_Customer_16000/src/main/java/ynu/edu/Controller/CartController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service_Customer_16000/src/main/java/ynu/edu/IService/ICartService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Service_Customer_16000/src/main/java/ynu/edu/IService/ICartService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service_Customer_16000/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Service_Customer_16000/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service_Customer_16001/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Service_Customer_16001/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service_Customer_16001/src/main/java/ynu/edu/Controller/CartController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Service_Customer_16001/src/main/java/ynu/edu/Controller/CartController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service_Customer_16001/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Service_Customer_16001/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +56,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "20",
-    "last_opened_file_path": "D:/2023Exercise/SpringCloud/ex/ex1",
+    "last_opened_file_path": "D:/2023Exercise/SpringCloud/example7",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -87,7 +64,7 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "spring.configuration.checksum": "591caa9c5f2697cbfd3d2be2c84e1b1f"
+    "spring.configuration.checksum": "4c4253bca0a72f1a3505fa4361e93f02"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -98,6 +75,9 @@
       <recent name="D:\2023Exercise\SpringCloud\ex\ex1\Service_Customer_16001\src\main\resources" />
       <recent name="D:\2023Exercise\SpringCloud\ex\ex1" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="ynu.edu.IService" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="configurationTypes">
@@ -107,8 +87,9 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.ConsumerApplication16000">
+  <component name="RunManager" selected="Spring Boot.ConsumerApplication16002">
     <configuration name="ConsumerApplication16000" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <option name="ACTIVE_PROFILES" />
       <module name="Service_Customer_16000" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="ynu.edu.ConsumerApplication16000" />
       <extension name="coverage">
@@ -121,9 +102,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EurekaApplication18000" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="Eureka_Server_18000" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="ynu.edu.EurekaApplication18000" />
+    <configuration name="ConsumerApplication16001" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <option name="ACTIVE_PROFILES" />
+      <module name="Service_Customer_16001" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="ynu.edu.ConsumerApplication16001" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="ynu.edu.*" />
@@ -134,9 +116,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EurekaApplication18001" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="Eureka_Server_18001" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="ynu.edu.EurekaApplication18001" />
+    <configuration name="ConsumerApplication16002" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="Service_Customer_16002" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="ynu.edu.ConsumerApplication16002" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="ynu.edu.*" />
@@ -174,13 +156,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Spring Boot.ConsumerApplication16002" />
+      <item itemvalue="Spring Boot.ConsumerApplication16000" />
+      <item itemvalue="Spring Boot.ConsumerApplication16001" />
+      <item itemvalue="Spring Boot.ProviderApplication11000" />
+      <item itemvalue="Spring Boot.ProviderApplication11001 " />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.ConsumerApplication16002" />
+        <item itemvalue="Spring Boot.ConsumerApplication16001" />
+        <item itemvalue="Spring Boot.ProviderApplication11001 " />
         <item itemvalue="Spring Boot.ConsumerApplication16000" />
         <item itemvalue="Spring Boot.ProviderApplication11000" />
-        <item itemvalue="Spring Boot.ProviderApplication11001 " />
-        <item itemvalue="Spring Boot.EurekaApplication18001" />
-        <item itemvalue="Spring Boot.EurekaApplication18000" />
       </list>
     </recent_temporary>
   </component>
@@ -219,6 +208,12 @@
       <workItem from="1713179179710" duration="2578000" />
       <workItem from="1713250934099" duration="4249000" />
       <workItem from="1713255939583" duration="751000" />
+      <workItem from="1713267246820" duration="1281000" />
+      <workItem from="1713322928351" duration="53000" />
+      <workItem from="1713326762668" duration="256000" />
+      <workItem from="1713405642178" duration="13000" />
+      <workItem from="1713765139023" duration="2673000" />
+      <workItem from="1714819503565" duration="8248000" />
     </task>
     <servers />
   </component>

@@ -1,62 +1,48 @@
 package ynu.edu.Controller;
 
+import io.github.resilience4j.circuitbreaker.annotation.CircuitBreaker;
 import jakarta.annotation.Resource;
-import org.springframework.cloud.client.ServiceInstance;
 import org.springframework.cloud.client.discovery.DiscoveryClient;//不要用Netflix的
-import org.springframework.util.LinkedMultiValueMap;
-import org.springframework.util.MultiValueMap;
 import org.springframework.web.bind.annotation.*;
 import ynu.edu.Entity.CommonResult;
 import ynu.edu.Entity.User;
-import org.springframework.web.client.RestTemplate;
-
-import java.util.List;
+import ynu.edu.IService.ICartService;
 
 @RestController
 @RequestMapping("/Cart")
 public class CartController {
     @Resource
-    private RestTemplate restTemplate;//自动加载进入项目
+    private ICartService cartService;
 
-    @Resource
-    private DiscoveryClient discoveryClient;
-
+    @CircuitBreaker(name = "circuitbreakerA", fallbackMethod = "downCartById")
     @GetMapping("/getCartById/{Id}")
     public CommonResult<User> getCartById(@PathVariable("Id") Integer Id){
-        List<ServiceInstance> list = discoveryClient.getInstances("provider-server");
-        for(ServiceInstance i : list){
-            System.out.println(i.getHost()+"\t"+i.getPort());
-        }
-        return restTemplate.getForObject(
-                "http://"+discoveryClient.getInstances("provider-server").get(0).getHost()
-                        +":"+ discoveryClient.getInstances("provider-server").get(0).getPort()
-                        + "/user/getUserById/"+Id.toString(),
-                CommonResult.class);
+        return cartService.getCartById(Id);
     }
+    public CommonResult<User> downCartById(@PathVariable("Id") Integer Id, Throwable e){
+        e.printStackTrace();
+        String meg = "爆满啦！信息的服务当前被熔断！方法降级！";
+        return new CommonResult<>(4000, meg, new User());
+    }
+
+    @CircuitBreaker(name = "circuitbreakerB", fallbackMethod = "downGetMsg")
     @PostMapping("/getMsg")
     public String getMsg(@RequestParam(name = "userName") String userName){
-        MultiValueMap<String, Object> map = new LinkedMultiValueMap<>();
-        map.add("userName",userName);
-        System.out.println(discoveryClient.getInstances("provider-server").get(0).getHost());
-        System.out.println(discoveryClient.getInstances("provider-server").get(0).getPort());
-        return restTemplate.postForObject(
-                "http://"+discoveryClient.getInstances("provider-server").get(0).getHost()
-                         +":"+discoveryClient.getInstances("provider-server").get(0).getPort()
-                         + "/user/getMsg",map,String.class);
+        return cartService.getMsg(userName);
+    }
+    public String downGetMsg(@RequestParam(name = "userName") String userName){
+        if(userName.isEmpty()){
+            return "用户名不存在。。。";
+        }
+        return "出错了。。。";
     }
     @PutMapping("/put")
     public String putMsg(@RequestBody User user){
-        return restTemplate.postForEntity(
-                "http://"+discoveryClient.getInstances("provider-server").get(0).getHost()
-                        +":"+discoveryClient.getInstances("provider-server").get(0).getPort()
-                        + "/user/putMsg",user,String.class).getBody();
+        return cartService.putMsg(user);
     }
     @DeleteMapping("delete")
     public String deleteMsg(@RequestBody User user){
-        return restTemplate.postForEntity(
-                "http://"+discoveryClient.getInstances("provider-server").get(0).getHost()
-                        +":"+discoveryClient.getInstances("provider-server").get(0).getPort()
-                        + "/user/deleteMsg",user,String.class).getBody();
+        return cartService.deleteMsg(user);
     }
 
 
