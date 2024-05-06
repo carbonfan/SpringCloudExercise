@@ -14,14 +14,16 @@ public class CartController {
     @Resource
     private ICartService cartService;
 
-    @CircuitBreaker(name = "circuitbreakerA", fallbackMethod = "downCartById")
+    @CircuitBreaker(name = "circuitbreakerB", fallbackMethod = "downCartById")
     @GetMapping("/getCartById/{Id}")
     public CommonResult<User> getCartById(@PathVariable("Id") Integer Id){
+        System.out.println("该功能正常。");
         return cartService.getCartById(Id);
     }
     public CommonResult<User> downCartById(@PathVariable("Id") Integer Id, Throwable e){
         e.printStackTrace();
         String meg = "爆满啦！信息的服务当前被熔断！方法降级！";
+        System.out.println(meg);
         return new CommonResult<>(4000, meg, new User());
     }
 

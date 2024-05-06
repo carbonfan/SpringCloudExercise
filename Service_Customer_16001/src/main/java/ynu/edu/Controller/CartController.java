@@ -14,6 +14,7 @@ import org.springframework.web.client.RestTemplate;
 import ynu.edu.IService.ICartService;
 
 import java.util.List;
+import java.util.concurrent.CompletableFuture;
 
 @RestController
 @RequestMapping("/Cart")
@@ -21,14 +22,21 @@ public class CartController {
     @Resource
     ICartService cartService;
 
-    @Bulkhead(name = "bulkheadA", type = Bulkhead.Type.THREADPOOL, fallbackMethod = "downCartById")
+    @Bulkhead(name = "bulkheadA", type = Bulkhead.Type.THREADPOOL, fallbackMethod = "getCartByIdDown")
     @GetMapping("/getCartById/{Id}")
-    public CommonResult<User> getCartById(@PathVariable("Id") Integer Id){
-        return cartService.getCartById(Id);
+    public CompletableFuture<User> getCartById(@PathVariable("Id") Integer Id) throws Exception {
+        CompletableFuture<User> result = CompletableFuture.supplyAsync(()->{return cartService.getCartById(Id).getResult();});
+        String meg = "该功能正常。";
+        System.out.println(meg);
+        Thread.sleep(10000L);
+
+        return result;
     }
 
-    public CommonResult<User> downCartById(@PathVariable("Id") Integer Id){
-        String meg = "线程池隔离！";
-        return new CommonResult<>(6000, meg, new User());
+    public CompletableFuture<User> getCartByIdDown(@PathVariable("Id") Integer Id, Throwable e) {
+        e.printStackTrace();
+        String meg = "线程池隔离";
+        System.out.println(meg);
+        return CompletableFuture.supplyAsync(()->{return new CommonResult<>(400,"fallback",new User()).getResult();});
     }
 }

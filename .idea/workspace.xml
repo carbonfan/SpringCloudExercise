@@ -4,20 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8bb1ebc2-1fb4-4eb4-8b4b-d63a35923c2e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Service_Customer_16002/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Service_Customer_16002/src/main/resources/application.yaml" afterDir="false" />
+    <list default="true" id="8bb1ebc2-1fb4-4eb4-8b4b-d63a35923c2e" name="Changes" comment="新添了熔断器、隔离器、限流控制">
+      <change afterPath="$PROJECT_DIR$/Gateway_Server_12000/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Gateway_Server_12000/src/main/java/ynu/edu/GatewayApplication12000.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Gateway_Server_12000/src/main/resources/application.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Service_Customer_16000/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Service_Customer_16000/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Service_Customer_16000/src/main/java/ynu/edu/ConsumerApplication16000.java" beforeDir="false" afterPath="$PROJECT_DIR$/Service_Customer_16000/src/main/java/ynu/edu/ConsumerApplication16000.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Service_Customer_16000/src/main/java/ynu/edu/Controller/CartController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Service_Customer_16000/src/main/java/ynu/edu/Controller/CartController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Service_Customer_16000/src/main/java/ynu/edu/IService/ICartService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Service_Customer_16000/src/main/java/ynu/edu/IService/ICartService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Service_Customer_16000/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Service_Customer_16000/src/main/resources/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Service_Customer_16001/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Service_Customer_16001/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service_Customer_16000/target/classes/ynu/edu/Controller/CartController.class" beforeDir="false" afterPath="$PROJECT_DIR$/Service_Customer_16000/target/classes/ynu/edu/Controller/CartController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Service_Customer_16001/src/main/java/ynu/edu/Controller/CartController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Service_Customer_16001/src/main/java/ynu/edu/Controller/CartController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Service_Customer_16001/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Service_Customer_16001/src/main/resources/application.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -28,12 +24,17 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -56,7 +57,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "20",
-    "last_opened_file_path": "D:/2023Exercise/SpringCloud/example7",
+    "last_opened_file_path": "D:/2023Exercise/SpringCloud/example8",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -64,7 +65,7 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "spring.configuration.checksum": "4c4253bca0a72f1a3505fa4361e93f02"
+    "spring.configuration.checksum": "ca70e21d75bbd039ab257ecceb0bc3ba"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -89,7 +90,6 @@
   </component>
   <component name="RunManager" selected="Spring Boot.ConsumerApplication16002">
     <configuration name="ConsumerApplication16000" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <option name="ACTIVE_PROFILES" />
       <module name="Service_Customer_16000" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="ynu.edu.ConsumerApplication16000" />
       <extension name="coverage">
@@ -103,7 +103,6 @@
       </method>
     </configuration>
     <configuration name="ConsumerApplication16001" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <option name="ACTIVE_PROFILES" />
       <module name="Service_Customer_16001" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="ynu.edu.ConsumerApplication16001" />
       <extension name="coverage">
@@ -129,6 +128,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="EurekaApplication18000" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="Eureka_Server_18000" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="ynu.edu.EurekaApplication18000" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ynu.edu.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ProviderApplication11000" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="Service_Provider_11000" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="ynu.edu.ProviderApplication11000" />
@@ -142,34 +154,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProviderApplication11001 " type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true">
-      <option name="ACTIVE_PROFILES" />
-      <module name="Service_Provider_11001" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="ynu.edu.ProviderApplication11001" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ynu.edu.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
       <item itemvalue="Spring Boot.ConsumerApplication16002" />
-      <item itemvalue="Spring Boot.ConsumerApplication16000" />
       <item itemvalue="Spring Boot.ConsumerApplication16001" />
+      <item itemvalue="Spring Boot.EurekaApplication18000" />
+      <item itemvalue="Spring Boot.ConsumerApplication16000" />
       <item itemvalue="Spring Boot.ProviderApplication11000" />
-      <item itemvalue="Spring Boot.ProviderApplication11001 " />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.ConsumerApplication16002" />
         <item itemvalue="Spring Boot.ConsumerApplication16001" />
-        <item itemvalue="Spring Boot.ProviderApplication11001 " />
         <item itemvalue="Spring Boot.ConsumerApplication16000" />
         <item itemvalue="Spring Boot.ProviderApplication11000" />
+        <item itemvalue="Spring Boot.EurekaApplication18000" />
       </list>
     </recent_temporary>
   </component>
@@ -213,8 +211,18 @@
       <workItem from="1713326762668" duration="256000" />
       <workItem from="1713405642178" duration="13000" />
       <workItem from="1713765139023" duration="2673000" />
-      <workItem from="1714819503565" duration="8248000" />
+      <workItem from="1714819503565" duration="8635000" />
+      <workItem from="1714961942303" duration="3356000" />
+      <workItem from="1714974688631" duration="5086000" />
     </task>
+    <task id="LOCAL-00001" summary="新添了熔断器、隔离器、限流控制">
+      <created>1714836107315</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1714836107316</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -230,5 +238,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="新添了熔断器、隔离器、限流控制" />
+    <option name="LAST_COMMIT_MESSAGE" value="新添了熔断器、隔离器、限流控制" />
   </component>
 </project>

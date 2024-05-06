@@ -9,6 +9,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="Eureka_Server_18000" />
         <module name="Eureka_Server_18001" />
+        <module name="Gateway_Server_12000" />
         <module name="Service_Provider_11001" />
         <module name="Service_Provider_11000" />
         <module name="Service_Customer_16002" />
