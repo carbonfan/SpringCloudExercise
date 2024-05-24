@@ -1,9 +1,55 @@
 server:
   port: 12000
+
+resilience4j:
+  circuitbreaker:
+    configs:
+      default:
+        failure-rate-threshold: 30
+        minimum-number-of-calls: 1
+        sliding-window-type: TIME_BASED
+        sliding-window-size: 10
+        automatic-transition-from-open-to-half-open-enabled: true
+        wait-duration-in-open-state: 2s
+        permitted-number-of-calls-in-half-open-state: 3
+        record-exceptions:
+          - java.lang.Exception
+    instances:
+      breaker:
+        base-config: default
+
 spring:
   application:
     name: "gateway-server"
   cloud:
     gateway:
       routes:
-        - id:
+        - id: customer
+          uri: lb://consumer-server
+          predicates:
+            - Path=/Cart/**
+          filters:
+            - name: CircuitBreaker
+              args:
+                name: breaker
+                fallbackUri: forward:/fallback
+        - id: provider
+          uri: lb://provider-server
+          predicates:
+            - Path=/user/getUserById/**
+      globalcors:
+        cors-configurations:
+          '[/**]':
+            allowed-origins: "*"
+            allowed-methods: "GET,HEAD,POST,PUT,DELETE,OPTIONS"
+            allowed-headers: "*"
+
+eureka:
+  instance:
+    prefer-ip-address: true #不加则服务器上原本是ip地址的地方会变成机器地址
+    instance-id: ${spring.cloud.client.ip-address}:${server.port} #该服务的ip地址 告知服务器
+    lease-renewal-interval-in-seconds: 5 #5s通信一次
+    lease-expiration-duration-in-seconds: 15 #15s之内没有通信则删除该服务
+  client: #微服务注册中心地址
+    service-url:
+      defaultZone: "http://eurekaServer18000:18000/eureka/,http://eurekaServer18001:18001/eureka/"
