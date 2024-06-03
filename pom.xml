@@ -18,6 +18,8 @@
         <module>Service_Customer_16001</module>
         <module>Service_Customer_16002</module>
         <module>Gateway_Server_12000</module>
+        <module>Config_Server_15000</module>
+        <module>Config_Server_15001</module>
     </modules>
 
     <!--统一JAVA版本和编码方式-->

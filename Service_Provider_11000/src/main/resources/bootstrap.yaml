@@ -1,8 +1,12 @@
-server:
-  port: 11000
 spring:
-  application:
-    name: "provider-server"
+  cloud:
+    config:
+      discovery:
+        enabled: true
+        service-id: config-server
+      profile: dev
+      label: master
+      name: provider_service_11000
 eureka:
   instance:
     prefer-ip-address: true #
